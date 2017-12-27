@@ -1,0 +1,9 @@
+version: '2'
+services:
+  latex-rq:
+    build: .
+    depends_on:
+      - "redis"
+
+  redis:
+    image: "redis"
